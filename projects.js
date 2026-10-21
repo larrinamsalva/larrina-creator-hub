@@ -29,6 +29,13 @@ window.LARRINA_PROJECTS = [
     keywords: 'family wellness health medication reminders calendar journal'
   },
   {
+    id: 'vibraheal', name: 'VibraHeal', category: 'apps',
+    description: 'Relax, breathe and recharge with customizable tones, gentle nature sounds, guided breathing and private mindfulness tools.',
+    badge: 'RELAX & RESET', icon: '🎧', color: 'teal', status: 'public',
+    href: 'https://larrinamsalva.github.io/vibra-heal/', action: 'Try VibraHeal', featured: true,
+    keywords: 'vibraheal vibra heal relaxation mindfulness guided breathing frequencies tones sound nature rain ocean wind focus meditation wellness'
+  },
+  {
     id: 'scamalax', name: 'SCAM-A-LAX', category: 'apps',
     description: 'A people-first, local-first project for spotting scam warning signs and organizing reports and evidence.',
     badge: 'STAY SCAM SMART', icon: '🛡️', color: 'gold', status: 'source',
