@@ -2,52 +2,52 @@
 
 **Play. Learn. Create. Connect.**
 
-A free, mobile-friendly, fully static personal creator hub for Larrina's public games, helpful apps, music, and creative projects. Inspired by the *idea* of Mikey's project gateway but separately designed and written for Larrina.
+**Website:** https://larrinamsalva.github.io/larrina-creator-hub/
 
-## What is included
+A colorful, mobile-friendly home for Larrina's learning games, helpful software, Chip Nasty music and creative projects.
 
-- Responsive, colorful homepage with a distinct Larrina identity
-- Direct links to published games and music and public project repositories
-- Searchable catalog with category filters
-- "Surprise me" random project button
-- Share/copy-link button, keyboard focus styles, reduced-motion preference support
-- Editable `projects.js` file for growing the public catalog
-- SVG favicon and social-sharing preview
-- QR code for the **proposed future URL**, included in `assets/qr-after-publish.*` **ONLY use once the site is actually live**
-- `PROFILE_README.md` with an optional GitHub profile bio
-- No build tools, dependencies, user accounts, analytics, tracking, or API keys
+## Explore
 
-## Publish it on GitHub Pages (recommended)
+- [LarriVerse Arcade](https://larrinamsalva.github.io/larriverse-arcade/)
+- [Brain Sweat Studio](https://larrinamsalva.github.io/brainsweatstudios/)
+- [Family Companion](https://family-wellness-companion.larrina.chatgpt.site/)
+- [SCAM-A-LAX](https://github.com/larrinamsalva/SCAM-A-LAX)
+- [Field Manager project](https://github.com/larrinamsalva/field-manager-website)
+- [Chip Nasty's music on Suno](https://suno.com/@larrinasalva)
+- [Laughrina](https://github.com/larrinamsalva/Laughrina)
 
-1. Sign in to Larrina's GitHub account.
-2. Create a **new public repository** named **`larrina-creator-hub`**, with **no starter README** (to avoid a file conflict).
-3. Unzip this package and upload **the contents** of its `larrina-creator-hub` folder to the root of the new repo using **Add file → Upload files**. Include `index.html`, `styles.css`, `app.js`, `projects.js`, `.nojekyll` and `assets/`. (`PROFILE_README.md` can stay as a reference file.)
-4. On GitHub, go to **Settings → Pages** and choose **Deploy from a branch**, branch `main`, folder `/ (root)`, then **Save**.
-5. Open and test **https://larrinamsalva.github.io/larrina-creator-hub/** after publishing. Open each project card, search/filter and the share button on both desktop and phone.
-6. Only after confirming it works should you print or distribute `assets/qr-after-publish.png` / `.svg`. The QR points to that exact URL.
+Some destinations open the project's public source repository rather than a finished app. Private projects and unconfirmed Facebook/group links are intentionally excluded.
 
-> Publishing was not performed by generating this package. A GitHub repo and Pages setting must be created before the proposed URL exists.
+## How to update the hub
 
-## Add a new project or link
+This is a **static HTML/CSS/JavaScript website**—no React build, API key, database, account, or dependency installation required.
 
-Open `projects.js` and add one new object inside `window.LARRINA_PROJECTS`, following existing examples. Categories: `games`, `apps`, `music`, or `creative`. Only include verified public URLs. The page will update automatically on the next deployment. This site does not automatically discover private repositories.
+- **Add or edit a project:** Change its entry in `projects.js`. Keep the `id` unique; supported categories are `games`, `apps`, `music` and `creative`.
+- **Change the writing or site sections:** Edit `index.html`.
+- **Change colors or layout:** Edit `styles.css`.
+- **Change search, filters, share or Surprise Me behavior:** Edit `app.js`.
+- **Change branding artwork:** Edit `assets/`.
 
-## Add Facebook, groups, and more
+Commit a change to `main`. The `.github/workflows/deploy.yml` workflow automatically publishes the site using GitHub Pages. Check the [Actions tab](https://github.com/larrinamsalva/larrina-creator-hub/actions) for the deployment result.
 
-They were **deliberately omitted** until Larrina or Mikey supplies their confirmed public links. Edit `index.html` in the `#connect` section to add buttons. Do not invent social links or publish personal contact details without permission.
+## QR code and business cards
+
+The QR code at [assets/qr-after-publish.png](assets/qr-after-publish.png) and its scalable [SVG version](assets/qr-after-publish.svg) both point to:
+
+https://larrinamsalva.github.io/larrina-creator-hub/
+
+Test the live destination with an actual phone before printing or distributing cards. The URL stays stable while the content grows.
+
+## Share preview
+
+The image in [assets/social-preview.png](assets/social-preview.png) is referenced by social sharing meta tags in the homepage. A matching editable SVG is also included.
 
 ## Optional GitHub profile intro
 
-The file `PROFILE_README.md` is a suggested profile README. The special GitHub profile repository must be **`larrinamsalva/larrinamsalva`**. You can copy the text into that repo's `README.md` if you want a matching public GitHub profile. Do not change other repositories.
+`PROFILE_README.md` is a **draft only** for a special GitHub profile README. It does not automatically change the public profile. If Larrina wants to use it, the special profile repository would be `larrinamsalva/larrinamsalva`.
 
-## Careful public descriptions
+## Privacy and accuracy
 
-- Family Companion is described as an organizer, **not** a medical service.
-- SCAM-A-LAX links to the source repository while release/availability is reviewed; its risk meter is not a scam-probability calculator.
-- Business projects link to public source only; no claims are made about production availability.
-- Private app repositories and unverified social profiles are intentionally **not linked**.
-- Suno goes to the supplied artist handle; confirm that the public profile opens before sharing widely.
+Only verified public destinations belong on the front page. Don't publish personal numbers, addresses, private repositories or unconfirmed group links. The site has no analytics, backend, login or visitor data collection. Family Companion is an organizer, not a medical provider; SCAM-A-LAX's risk meter is an educational warning indicator, not a scam probability.
 
-## License / attribution
-
-Original HTML, CSS and JavaScript created for Larrina's Creator Hub. Third-party project names belong to their respective owners. Check and obtain permission before adding other people's photos, logos, or graphics. © Larrina.
+Original website assembled for Larrina with ❤️.
