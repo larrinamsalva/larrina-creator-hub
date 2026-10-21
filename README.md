@@ -11,6 +11,7 @@ A colorful, mobile-friendly home for Larrina's learning games, helpful software,
 - [LarriVerse Arcade](https://larrinamsalva.github.io/larriverse-arcade/)
 - [Brain Sweat Studio](https://larrinamsalva.github.io/brainsweatstudios/)
 - [Family Companion](https://family-wellness-companion.larrina.chatgpt.site/)
+- [VibraHeal](https://larrinamsalva.github.io/vibra-heal/) — relaxation, guided breathing, nature sounds and mindfulness
 - [SCAM-A-LAX](https://github.com/larrinamsalva/SCAM-A-LAX)
 - [Field Manager project](https://github.com/larrinamsalva/field-manager-website)
 - [Chip Nasty's music on Suno](https://suno.com/@larrinasalva)
