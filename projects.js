@@ -9,10 +9,17 @@
 window.LARRINA_PROJECTS = [
   {
     id: 'larriverse', name: 'LarriVerse Arcade', category: 'games',
-    description: 'Step into a colorful arcade of hands-on learning worlds, puzzles, road safety, gardens, science and more.',
+    description: 'Step into colorful learning worlds: puzzles, road safety, gardens, science, dinosaur discovery and more.',
     badge: 'FREE TO PLAY', icon: '🎮', color: 'violet', status: 'public',
     href: 'https://larrinamsalva.github.io/larriverse-arcade/', action: 'Play the arcade', featured: true,
-    keywords: 'educational kids teens word search sudoku learning worlds play game'
+    keywords: 'educational kids teens word search sudoku learning worlds play game dinosaurs dino science 3d'
+  },
+  {
+    id: 'dino-discovery', name: 'Dino Discovery World · 3D', category: 'games',
+    description: 'Travel through prehistoric time portals, investigate fossils and explore dinosaur science in an 80-mission learning adventure with 3D Explorer Trails.',
+    badge: 'NEW · DINO ADVENTURE', icon: '🦕', color: 'teal', status: 'public',
+    href: 'https://larrinamsalva.github.io/larriverse-arcade/games/dino-discovery-world/', action: 'Explore Dino World', featured: true,
+    keywords: 'dinosaur dinos paleontology prehistoric triassic jurassic cretaceous 3d fossils explorer science kids learning world'
   },
   {
     id: 'brainsweat', name: 'Brain Sweat Studio', category: 'games',
@@ -20,6 +27,13 @@ window.LARRINA_PROJECTS = [
     badge: 'LEARN BY DOING', icon: '🧠', color: 'teal', status: 'public',
     href: 'https://larrinamsalva.github.io/brainsweatstudios/', action: 'Enter the studio', featured: true,
     keywords: 'kids teens classes road ready driving coding money games'
+  },
+  {
+    id: 'chiptoons', name: 'ChipToons Studio', category: 'creative',
+    description: 'Turn an idea, sketch or original picture into an editable cartoon with characters, scenes, voices and real video exports. Create stories that teach and inspire.',
+    badge: 'NEW · CARTOON STUDIO', icon: '🎬', color: 'pink', status: 'source',
+    href: 'https://github.com/larrinamsalva/ChipToons', action: 'Explore ChipToons on GitHub', featured: true,
+    keywords: 'chiptoons animation cartoons children kids creator storyboard character drawing video export little fixers'
   },
   {
     id: 'family', name: 'Family Companion', category: 'apps',
