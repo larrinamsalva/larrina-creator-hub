@@ -8,8 +8,10 @@ A colorful, mobile-friendly home for Larrina's learning games, helpful software,
 
 ## Explore
 
-- [LarriVerse Arcade](https://larrinamsalva.github.io/larriverse-arcade/)
+- [LarriVerse Arcade](https://larrinamsalva.github.io/larriverse-arcade/) — now with dinosaur discovery and 3D prehistoric exploration
+- [Dino Discovery World · 3D](https://larrinamsalva.github.io/larriverse-arcade/games/dino-discovery-world/) — 80 science missions, fossils, and three prehistoric time portals
 - [Brain Sweat Studio](https://larrinamsalva.github.io/brainsweatstudios/)
+- [ChipToons Studio](https://github.com/larrinamsalva/ChipToons) — create editable educational cartoons; GitHub source link while live-site checks are being reviewed
 - [Family Companion](https://family-wellness-companion.larrina.chatgpt.site/)
 - [VibraHeal](https://larrinamsalva.github.io/vibra-heal/) — relaxation, guided breathing, nature sounds and mindfulness
 - [SCAM-A-LAX](https://github.com/larrinamsalva/SCAM-A-LAX)
