@@ -48,25 +48,35 @@
     title.textContent = project.name;
     const description = document.createElement('p');
     description.textContent = project.description;
-    const link = document.createElement('a');
-    link.className = 'card-link';
-    link.href = project.href;
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
-    const label = document.createElement('span');
-    label.textContent = project.action;
-    const arrow = document.createElement('span');
-    arrow.setAttribute('aria-hidden', 'true');
-    arrow.textContent = '↗';
-    link.append(label, arrow);
-    const destination = document.createElement('a');
-    destination.className = 'card-destination';
-    destination.href = project.href;
-    destination.target = '_blank';
-    destination.rel = 'noopener noreferrer';
-    destination.textContent = project.href.replace(/^https?:\/\//, '');
-    destination.setAttribute('aria-label', `Open direct link for ${project.name}: ${project.href}`);
-    content.append(eyebrow, title, description, link, destination);
+    content.append(eyebrow, title, description);
+    if (project.href) {
+      // The primary action always launches the actual app, not source code.
+      const link = document.createElement('a');
+      link.className = 'card-link';
+      link.href = project.href;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      const label = document.createElement('span');
+      label.textContent = project.action;
+      const arrow = document.createElement('span');
+      arrow.setAttribute('aria-hidden', 'true');
+      arrow.textContent = '↗';
+      link.append(label, arrow);
+      const destination = document.createElement('a');
+      destination.className = 'card-destination';
+      destination.href = project.href;
+      destination.target = '_blank';
+      destination.rel = 'noopener noreferrer';
+      destination.textContent = project.href.replace(/^https?:\/\//, '');
+      destination.setAttribute('aria-label', `Open direct link for ${project.name}: ${project.href}`);
+      content.append(link, destination);
+    } else {
+      // Never disguise a local-only application as a public website.
+      const unavailable = document.createElement('p');
+      unavailable.className = 'card-unavailable';
+      unavailable.textContent = 'No public app link yet — run this demo locally.';
+      content.append(unavailable);
+    }
 
     if (project.sourceHref && project.sourceHref !== project.href) {
       const source = document.createElement('a');
