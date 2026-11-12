@@ -3,25 +3,33 @@
  * Add/edit entries here only. External URLs are verified against supplied
  * project addresses and/or public repository READMEs where available.
  * Never add a private repository, unverified group, or personal contact detail.
- * Primary href should open the app/game/music directly. Optional sourceHref
- * provides a separate smaller developer-only source-code link.
+ * Primary href must open the public app/game/music directly. If a project is
+ * not hosted, leave href empty and set status:'local' so no dead launch link
+ * appears. Optional sourceHref provides separate code/setup instructions.
  * Each project supports: id, name, category, description, badge, icon,
  * color, status, href, sourceHref, action, featured, and keywords.
  */
 window.LARRINA_PROJECTS = [
   {
     id: 'larriverse', name: 'LarriVerse Arcade', category: 'games',
-    description: 'Step into colorful learning worlds: puzzles, road safety, gardens, science, dinosaur discovery and more.',
+    description: 'Play growing worlds of science, dinosaur discovery, creativity, road safety, gardens and problem-solving. Free learning adventures with device-local progress.',
     badge: 'FREE TO PLAY', icon: '🎮', color: 'violet', status: 'public',
     href: 'https://larrinamsalva.github.io/larriverse-arcade/', sourceHref: 'https://github.com/larrinamsalva/larriverse-arcade', action: 'Play the arcade', featured: true,
     keywords: 'educational kids teens word search sudoku learning worlds play game dinosaurs dino science 3d'
   },
   {
     id: 'dino-discovery', name: 'Dino Discovery World · 3D', category: 'games',
-    description: 'Travel through prehistoric time portals, investigate fossils and explore dinosaur science in an 80-mission learning adventure with 3D Explorer Trails.',
+    description: 'Pick any of eight science chapters from the start, including Fossil Dig. Explore 80 missions with smoother 3D dinosaurs, field-guide rewards and a free-choice mission menu.',
     badge: 'NEW · DINO ADVENTURE', icon: '🦕', color: 'teal', status: 'public',
     href: 'https://larrinamsalva.github.io/larriverse-arcade/games/dino-discovery-world/', sourceHref: 'https://github.com/larrinamsalva/larriverse-arcade', action: 'Explore Dino World', featured: true,
     keywords: 'dinosaur dinos paleontology prehistoric triassic jurassic cretaceous 3d fossils explorer science kids learning world'
+  },
+  {
+    id: 'dino-trails', name: '3D Dinosaur Explorer Trails', category: 'games',
+    description: 'Walk through Triassic, Jurassic and Cretaceous worlds, visit nine dinosaur and fossil stations, and save discoveries in your local trail journal. No account needed.',
+    badge: 'EXPLORE IN 3D', icon: '🦖', color: 'teal', status: 'public',
+    href: 'https://larrinamsalva.github.io/larriverse-arcade/games/dino-discovery-world/explore.html', sourceHref: 'https://github.com/larrinamsalva/larriverse-arcade', action: 'Walk the dinosaur trails', featured: true,
+    keywords: 'dino explore walking trails triassic jurassic cretaceous fossil paleontology learning 3d'
   },
   {
     id: 'brainsweat', name: 'Brain Sweat Studio', category: 'games',
@@ -32,10 +40,24 @@ window.LARRINA_PROJECTS = [
   },
   {
     id: 'chiptoons', name: 'ChipToons Studio', category: 'creative',
-    description: 'Turn an idea, sketch or original picture into an editable cartoon with characters, scenes, voices and real video exports. Create stories that teach and inspire.',
+    description: 'Build original children’s cartoons from a thought, sketch or picture. Create characters, scenes, motion and sound, then export real WebM movies from your browser.',
     badge: 'NEW · CARTOON STUDIO', icon: '🎬', color: 'pink', status: 'public',
     href: 'https://larrinamsalva.github.io/ChipToons/', sourceHref: 'https://github.com/larrinamsalva/ChipToons', action: 'Open ChipToons Studio', featured: true,
     keywords: 'chiptoons animation cartoons children kids creator storyboard character drawing video export little fixers'
+  },
+  {
+    id: 'forgeos-property', name: 'ForgeOS · Property Manager Demo', category: 'apps',
+    description: 'Try a fictional-data guest tour of the RV park and property management workspace: sites, customers, meter readings, billing previews and work orders. This is a staging demo, not a real account or live billing system.',
+    badge: 'STAGING · GUEST DEMO', icon: '🏘️', color: 'blue', status: 'public',
+    href: 'https://forgeos-property-manager-staging.vercel.app/demo', sourceHref: 'https://github.com/larrinamsalva/ForgeOS-Property-Manager', action: 'Explore the ForgeOS demo', featured: true,
+    keywords: 'forgeos rv park property manager sites units tenants customers reservations leases meters utility billing maintenance inventory guest demo'
+  },
+  {
+    id: 'lms-business', name: 'LMS · Living Management System', category: 'apps',
+    description: 'An open-source business-system builder with cleaning and property management examples, BuildPlan Studio, templates, branding and fictional demos. Currently runs locally; a public browser demo has not been confirmed.',
+    badge: 'LOCAL DEMO · NOT HOSTED', icon: '🧩', color: 'violet', status: 'local',
+    href: '', sourceHref: 'https://github.com/larrinamsalva/LMS', action: 'Not hosted yet', featured: false,
+    keywords: 'lms living management system buildplan studio business templates property cleaning customizable local demo open source'
   },
   {
     id: 'family', name: 'Family Companion', category: 'apps',
