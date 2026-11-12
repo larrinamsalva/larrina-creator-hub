@@ -59,7 +59,24 @@
     arrow.setAttribute('aria-hidden', 'true');
     arrow.textContent = '↗';
     link.append(label, arrow);
-    content.append(eyebrow, title, description, link);
+    const destination = document.createElement('a');
+    destination.className = 'card-destination';
+    destination.href = project.href;
+    destination.target = '_blank';
+    destination.rel = 'noopener noreferrer';
+    destination.textContent = project.href.replace(/^https?:\/\//, '');
+    destination.setAttribute('aria-label', `Open direct link for ${project.name}: ${project.href}`);
+    content.append(eyebrow, title, description, link, destination);
+
+    if (project.sourceHref && project.sourceHref !== project.href) {
+      const source = document.createElement('a');
+      source.className = 'card-source-link';
+      source.href = project.sourceHref;
+      source.target = '_blank';
+      source.rel = 'noopener noreferrer';
+      source.textContent = 'For developers: view source code';
+      content.append(source);
+    }
     article.append(graphic, content);
     return article;
   }
@@ -74,7 +91,7 @@
     cards.replaceChildren(...visibleProjects.map(projectCard));
     count.textContent = `${visibleProjects.length} of ${projects.length} creations to explore`;
     empty.hidden = visibleProjects.length > 0;
-    surprise.disabled = visibleProjects.length === 0;
+    surprise.disabled = !visibleProjects.some(project => project.href && project.status !== 'source');
     filters.forEach(button => {
       const active = button.dataset.filter === currentFilter;
       button.classList.toggle('is-active', active);
@@ -95,7 +112,11 @@
   surprise.addEventListener('click', () => {
     if (!visibleProjects.length) return;
     // Only randomize in response to a real user click; don't auto-navigate.
-    const playable = visibleProjects.filter(project => project.href);
+    const playable = visibleProjects.filter(project => project.href && project.status !== 'source');
+    if (!playable.length) {
+      showToast('Choose a project card to explore its link.');
+      return;
+    }
     const choice = playable[Math.floor(Math.random() * playable.length)];
     window.open(choice.href, '_blank', 'noopener,noreferrer');
     showToast(`✨ Exploring ${choice.name}!`);
