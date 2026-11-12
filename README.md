@@ -14,7 +14,7 @@ A colorful, mobile-friendly home for Larrina's learning games, helpful software,
 - [Brain Sweat Studio](https://larrinamsalva.github.io/brainsweatstudios/)
 - [ChipToons Studio](https://larrinamsalva.github.io/ChipToons/) — create editable educational cartoons and export WebM movies (smoke-test on the hosted page)
 - [ForgeOS Property Manager · Guest Demo](https://forgeos-property-manager-staging.vercel.app/demo) — fictional-data-only, no-login staging tour of RV and property management. This is **staging**, not live commercial software; check public access and the example workspace in a normal browser before sharing widely.
-- **LMS · Living Management System** — [open-source source and local setup guide](https://github.com/larrinamsalva/LMS). No confirmed hosted browser demo: run it locally following the README. Its card intentionally has **no fake Open App link**.
+- **LMS · Living Management System** — [Open LMS setup guide](https://github.com/larrinamsalva/LMS#run-the-fictional-demo-locally) or [browse the LMS repository](https://github.com/larrinamsalva/LMS). Its prominent hub card opens these real project instructions; no public online demo has been confirmed.
 - [Family Companion](https://family-wellness-companion.larrina.chatgpt.site/)
 - [VibraHeal](https://larrinamsalva.github.io/vibra-heal/) — relaxation, guided breathing, nature sounds and mindfulness
 - [SCAM-A-LAX](https://larrinamsalva.github.io/SCAM-A-LAX/)
@@ -22,7 +22,7 @@ A colorful, mobile-friendly home for Larrina's learning games, helpful software,
 - [Chip Nasty's music on Suno](https://suno.com/@larrinasalva)
 - [Laughrina](https://larrinamsalva.github.io/Laughrina/)
 
-For hosted projects, **Open** buttons lead directly to the public app, game, or music page, not to the GitHub repository. A smaller optional developer link leads to source code. **LMS** is listed transparently as a locally run project without a public launch button until its hosted demo is confirmed. The ForgeOS link comes from the connected Vercel staging project's production-target deployment record, not from a guessed hostname; please check that the no-login `/demo` route is accessible before public promotion. Visit each destination in a normal browser after merging, especially ChipToons and ForgeOS.
+For hosted projects, **Open** buttons lead directly to the public app, game, or music page, not to the GitHub repository. A smaller optional developer link leads to source code. **LMS** has a prominent **Open LMS setup guide** link to the repository's local fictional-demo instructions, and is clearly labeled **not hosted online** rather than pretending the GitHub link launches a browser app. The ForgeOS link comes from the connected Vercel staging project's production-target deployment record, not from a guessed hostname; please check that the no-login `/demo` route is accessible before public promotion. Visit each destination in a normal browser after merging, especially ChipToons and ForgeOS.
 
 ## How to update the hub
 
