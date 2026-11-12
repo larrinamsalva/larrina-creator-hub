@@ -55,8 +55,10 @@ window.LARRINA_PROJECTS = [
   {
     id: 'lms-business', name: 'LMS · Living Management System', category: 'apps',
     description: 'An open-source business-system builder with cleaning and property management examples, BuildPlan Studio, templates, branding and fictional demos. Currently runs locally; a public browser demo has not been confirmed.',
-    badge: 'LOCAL DEMO · NOT HOSTED', icon: '🧩', color: 'violet', status: 'local',
-    href: '', sourceHref: 'https://github.com/larrinamsalva/LMS', action: 'Not hosted yet', featured: false,
+    badge: 'LOCAL DEMO · SETUP GUIDE', icon: '🧩', color: 'violet', status: 'local',
+    href: '', setupHref: 'https://github.com/larrinamsalva/LMS#run-the-fictional-demo-locally',
+    sourceHref: 'https://github.com/larrinamsalva/LMS',
+    action: 'Open LMS setup guide', featured: true,
     keywords: 'lms living management system buildplan studio business templates property cleaning customizable local demo open source'
   },
   {

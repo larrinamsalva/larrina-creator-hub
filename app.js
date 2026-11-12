@@ -71,11 +71,22 @@
       destination.setAttribute('aria-label', `Open direct link for ${project.name}: ${project.href}`);
       content.append(link, destination);
     } else {
-      // Never disguise a local-only application as a public website.
+      // Local-only projects get a prominent setup-guide link, never a fake
+      // online-app launch. The card explains exactly where the link goes.
       const unavailable = document.createElement('p');
       unavailable.className = 'card-unavailable';
-      unavailable.textContent = 'No public app link yet — run this demo locally.';
+      unavailable.textContent = 'Not hosted online yet — the demo runs locally.';
       content.append(unavailable);
+      if (project.status === 'local' && project.setupHref) {
+        const guide = document.createElement('a');
+        guide.className = 'card-link';
+        guide.href = project.setupHref;
+        guide.target = '_blank';
+        guide.rel = 'noopener noreferrer';
+        guide.setAttribute('aria-label', `${project.action} (GitHub instructions, not a live app)`);
+        guide.textContent = project.action + ' ↗';
+        content.append(guide);
+      }
     }
 
     if (project.sourceHref && project.sourceHref !== project.href) {
