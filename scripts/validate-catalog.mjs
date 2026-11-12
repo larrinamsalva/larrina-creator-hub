@@ -22,7 +22,7 @@ for (const item of projects) {
     if (item.setupHref) {
       const guide = new URL(item.setupHref);
       assert.equal(guide.protocol, 'https:', item.id + ' setup guide uses HTTPS');
-      assert.equal(guide.hostname, 'github.com', item.id + ' setup guide must be from the project's repository');
+      assert.equal(guide.hostname, 'github.com', item.id + ' setup guide must be from its GitHub repository');
       assert.equal(guide.pathname, new URL(item.sourceHref).pathname, item.id + ' setup guide must belong to its project');
     }
   } else {
