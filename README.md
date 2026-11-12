@@ -11,21 +11,21 @@ A colorful, mobile-friendly home for Larrina's learning games, helpful software,
 - [LarriVerse Arcade](https://larrinamsalva.github.io/larriverse-arcade/) — now with dinosaur discovery and 3D prehistoric exploration
 - [Dino Discovery World · 3D](https://larrinamsalva.github.io/larriverse-arcade/games/dino-discovery-world/) — 80 science missions, fossils, and three prehistoric time portals
 - [Brain Sweat Studio](https://larrinamsalva.github.io/brainsweatstudios/)
-- [ChipToons Studio](https://github.com/larrinamsalva/ChipToons) — create editable educational cartoons; GitHub source link while live-site checks are being reviewed
+- [ChipToons Studio](https://larrinamsalva.github.io/ChipToons/) — editable educational cartoons (smoke-test the editor on the hosted page)
 - [Family Companion](https://family-wellness-companion.larrina.chatgpt.site/)
 - [VibraHeal](https://larrinamsalva.github.io/vibra-heal/) — relaxation, guided breathing, nature sounds and mindfulness
-- [SCAM-A-LAX](https://github.com/larrinamsalva/SCAM-A-LAX)
-- [Field Manager project](https://github.com/larrinamsalva/field-manager-website)
+- [SCAM-A-LAX](https://larrinamsalva.github.io/SCAM-A-LAX/)
+- [Field Manager website](https://field-manager-website.vercel.app/)
 - [Chip Nasty's music on Suno](https://suno.com/@larrinasalva)
-- [Laughrina](https://github.com/larrinamsalva/Laughrina)
+- [Laughrina](https://larrinamsalva.github.io/Laughrina/)
 
-Some destinations open the project's public source repository rather than a finished app. Private projects and unconfirmed Facebook/group links are intentionally excluded.
+Cards now open the public app, game, or music destination first. A smaller optional link opens source code for developers. Only the explicitly named **For Developers** card leads to the GitHub profile. App URLs are based on published project homepage settings and deployment records; visit each experience in a regular browser after merging, especially ChipToons.
 
 ## How to update the hub
 
 This is a **static HTML/CSS/JavaScript website**—no React build, API key, database, account, or dependency installation required.
 
-- **Add or edit a project:** Change its entry in `projects.js`. Keep the `id` unique; supported categories are `games`, `apps`, `music` and `creative`.
+- **Add or edit a project:** Change its entry in `projects.js`. Keep the `id` unique; supported categories are `games`, `apps`, `music` and `creative`. `href` is the direct public app/site; `sourceHref` is an optional GitHub code link.
 - **Change the writing or site sections:** Edit `index.html`.
 - **Change colors or layout:** Edit `styles.css`.
 - **Change search, filters, share or Surprise Me behavior:** Edit `app.js`.
