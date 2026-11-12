@@ -9,9 +9,12 @@ A colorful, mobile-friendly home for Larrina's learning games, helpful software,
 ## Explore
 
 - [LarriVerse Arcade](https://larrinamsalva.github.io/larriverse-arcade/) — now with dinosaur discovery and 3D prehistoric exploration
-- [Dino Discovery World · 3D](https://larrinamsalva.github.io/larriverse-arcade/games/dino-discovery-world/) — 80 science missions, fossils, and three prehistoric time portals
+- [Dino Discovery World · 3D](https://larrinamsalva.github.io/larriverse-arcade/games/dino-discovery-world/) — all eight chapters open for free choice, 80 missions and organic-looking models
+- [3D Dinosaur Explorer Trails](https://larrinamsalva.github.io/larriverse-arcade/games/dino-discovery-world/explore.html) — walk through Triassic, Jurassic and Cretaceous with a saved trail journal
 - [Brain Sweat Studio](https://larrinamsalva.github.io/brainsweatstudios/)
-- [ChipToons Studio](https://larrinamsalva.github.io/ChipToons/) — editable educational cartoons (smoke-test the editor on the hosted page)
+- [ChipToons Studio](https://larrinamsalva.github.io/ChipToons/) — create editable educational cartoons and export WebM movies (smoke-test on the hosted page)
+- [ForgeOS Property Manager · Guest Demo](https://forgeos-property-manager-staging.vercel.app/demo) — fictional-data-only, no-login staging tour of RV and property management. This is **staging**, not live commercial software; check public access and the example workspace in a normal browser before sharing widely.
+- **LMS · Living Management System** — [open-source source and local setup guide](https://github.com/larrinamsalva/LMS). No confirmed hosted browser demo: run it locally following the README. Its card intentionally has **no fake Open App link**.
 - [Family Companion](https://family-wellness-companion.larrina.chatgpt.site/)
 - [VibraHeal](https://larrinamsalva.github.io/vibra-heal/) — relaxation, guided breathing, nature sounds and mindfulness
 - [SCAM-A-LAX](https://larrinamsalva.github.io/SCAM-A-LAX/)
@@ -19,13 +22,13 @@ A colorful, mobile-friendly home for Larrina's learning games, helpful software,
 - [Chip Nasty's music on Suno](https://suno.com/@larrinasalva)
 - [Laughrina](https://larrinamsalva.github.io/Laughrina/)
 
-Cards now open the public app, game, or music destination first. A smaller optional link opens source code for developers. Only the explicitly named **For Developers** card leads to the GitHub profile. App URLs are based on published project homepage settings and deployment records; visit each experience in a regular browser after merging, especially ChipToons.
+For hosted projects, **Open** buttons lead directly to the public app, game, or music page, not to the GitHub repository. A smaller optional developer link leads to source code. **LMS** is listed transparently as a locally run project without a public launch button until its hosted demo is confirmed. The ForgeOS link comes from the connected Vercel staging project's production-target deployment record, not from a guessed hostname; please check that the no-login `/demo` route is accessible before public promotion. Visit each destination in a normal browser after merging, especially ChipToons and ForgeOS.
 
 ## How to update the hub
 
 This is a **static HTML/CSS/JavaScript website**—no React build, API key, database, account, or dependency installation required.
 
-- **Add or edit a project:** Change its entry in `projects.js`. Keep the `id` unique; supported categories are `games`, `apps`, `music` and `creative`. `href` is the direct public app/site; `sourceHref` is an optional GitHub code link.
+- **Add or edit a project:** Change its entry in `projects.js`. Keep the `id` unique; supported categories are `games`, `apps`, `music` and `creative`. `href` must open the direct public app/site; `sourceHref` is an optional GitHub code link. If there is no deployed public app, use `href: ''` and `status: 'local'`; the card explains the limitation instead of showing a broken launch button.
 - **Change the writing or site sections:** Edit `index.html`.
 - **Change colors or layout:** Edit `styles.css`.
 - **Change search, filters, share or Surprise Me behavior:** Edit `app.js`.
