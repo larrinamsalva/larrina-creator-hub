@@ -135,6 +135,9 @@ h2 {font-size:clamp(34px,4.3vw,53px);line-height:1.1;letter-spacing:-.055em;font
 .card-destination:hover {color:#fff}
 .card-source-link {display:inline-block;align-self:flex-start;margin-top:11px;color:#bcb4d0;font-size:11px;line-height:1.5;text-decoration:underline;text-underline-offset:3px}
 .card-source-link:hover {color:var(--gold)}
+.card-unavailable {border-top:1px solid rgba(255,255,255,.14);padding-top:17px;margin:0!important;color:#f0d59d!important;font-size:12px!important;font-weight:750;line-height:1.55!important}
+.card-unavailable+.card-source-link {margin-top:13px}
+
 .empty-state {text-align:center;padding:60px 20px;background:rgba(255,255,255,.04);border-radius:18px;border:1px dashed rgba(255,255,255,.18)}
 .empty-state[hidden] {display:none}
 .empty-state>span {font-size:35px;display:block;margin-bottom:12px}
